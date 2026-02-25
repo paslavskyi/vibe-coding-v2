@@ -25,6 +25,7 @@ Analyze the requirements provided in the chat context (referenced via @ files or
     * Analyze the provided requirements for completeness.
     * **Check for Testing:** Verify if testing (unit tests, integration tests, e2e tests) is mentioned in the requirements.
     * **Check for Refactoring:** Verify if refactoring after implementation is mentioned in the requirements.
+    * **Check for Resource Impact:** Identify whether the requirements affect UI or user-facing output and, if so, which resource files must be added or updated (e.g., localization/i18n strings, theme tokens, icons, accessibility labels). Capture the full list of impacted resource types in `llm_context.md` so implementers know exactly which files to touch.
     * **Action:** If testing or refactoring are not explicitly mentioned, flag them for proposal in `questions.md`.
     * **Stable State Planning:** Analyze requirements to plan tasks that lead to stable states.
         * Identify logical breakpoints where code should be buildable and testable.
@@ -57,7 +58,8 @@ Create the implementation plan.
     * **CRITICAL:** Every task must be planned so that after its completion, the code is in a stable state:
         * Code is buildable (compiles without errors)
         * Tests pass (or at minimum, no new test failures)
-    * **Task Granularity:** Plan task size appropriately. If needed, combine smaller related tasks into one task to ensure stable state is achievable after completion.
+        * All related resources are complete — if a task affects UI or user-facing output, include updating localization/i18n files, theme/style tokens, icons, accessibility labels, and any other resources the UI depends on within that same task. The user must never see raw resource keys, missing translations, or blank placeholders after a task is marked done.
+    * **Task Granularity:** Plan task size appropriately. If needed, combine smaller related tasks into one task to ensure stable state is achievable after completion. When a feature adds or changes user-visible text or visuals, bundle the resource updates into the same task rather than deferring them to a separate task.
     * **Incremental Stability:** Each task should build upon a stable foundation, ensuring the codebase remains functional throughout implementation.
 * **Dependencies:** List execution order at the bottom, ensuring dependencies support stable state progression.
 

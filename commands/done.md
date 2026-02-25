@@ -20,6 +20,7 @@ Finalize the project by cleaning up artifacts and confirming completion.
     * Check that execution order is complete
 * **Project State:**
     * Code is buildable, all tests pass, and linting/static analysis checks are successful (if configured)
+    * All UI-related resources are complete — no raw localization keys, missing translations, blank placeholders, broken asset references, or absent accessibility labels visible to the end user
     * No critical issues or blockers
     * All questions in `questions.md` are resolved (if file exists)
 
@@ -75,6 +76,7 @@ Generate a final completion report, then proceed with cleanup:
 - Code is buildable: ✓
 - All tests pass: ✓
 - Linting/Static Analysis: ✓ (or N/A)
+- Resources complete (localization, themes, assets, a11y): ✓ (or N/A)
 - No blockers: ✓
 
 ## Contribution Recommendations

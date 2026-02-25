@@ -57,6 +57,12 @@ Perform a thorough code review that verifies functionality, maintainability, and
     * [ ] Adequate test coverage for new/modified logic
     * [ ] Tests are meaningful, maintainable, and cover edge cases
     * [ ] Documentation and comments reflect the latest changes
+* **Resource Completeness (UI/Visualization tasks):**
+    * [ ] All localization/i18n strings added or updated — no raw keys or blank values rendered
+    * [ ] Theme/style tokens updated if the task introduced new visual elements
+    * [ ] Icons, images, or other asset references are present and correct
+    * [ ] Accessibility labels provided for new interactive or informational elements
+    * [ ] No user-visible placeholders, missing translations, or broken resource references
 
 # BEST PRACTICES VERIFICATION
 * **Architecture:**

@@ -27,12 +27,14 @@ You are a Senior Software Engineer focused on high-quality implementation.
     * If the task involves refactoring, ensure no existing functionality is broken (unless specified).
     * **Style:** Follow the project's existing coding style and conventions.
     * **Stable State:** Ensure that after each logical step, the code remains in a buildable state.
+    * **Resource Completeness:** If the task affects UI or user-facing output, update all related resources as part of the implementation (e.g., localization/i18n strings, theme tokens, asset references, accessibility labels). Never leave resource keys unmapped or placeholders visible to the end user.
 
 3.  **Post-Execution Verification:**
     * **Build Verification:** Ensure code compiles/builds successfully after implementation.
     * **Test Execution:** Run the test suite to verify all tests pass (or at minimum, no new test failures).
     * **Self-Correction:** Review the generated code for syntax errors or logical flaws.
     * **Dependency Check:** Ensure imports are correct and dependencies are satisfied.
+    * **Resource Verification:** If the task touched UI or user-facing output, confirm that all related resources are present and complete (localization strings, themes, icons, accessibility labels, etc.). Verify no raw keys, missing translations, or blank placeholders are rendered.
     * **Stable State Confirmation:** Verify the codebase is in a stable, buildable state with passing tests.
 
 # COMPLETION & UPDATE
@@ -40,6 +42,7 @@ Once the code is implemented and verified:
 1.  **Stable State Verification:**
     * **MANDATORY:** Code must be buildable after task completion.
     * **MANDATORY:** All tests must pass (or at minimum, no new failures introduced).
+    * **MANDATORY:** All related resources must be added or updated for tasks that affect UI or user-facing output. This includes but is not limited to: localization/i18n files, theme/style tokens, image or icon assets, accessibility labels, and any other resource files the UI depends on. A task with visible raw keys, missing translations, or blank placeholders in the UI is NOT complete.
     * If stable state cannot be achieved, do NOT mark the task as completed.
 2.  **Update `tasks.md`:**
     * Mark the selected Root Task as completed: Change `[ ]` to `[x]`.
@@ -49,4 +52,5 @@ Once the code is implemented and verified:
     * Report which task ID was completed (e.g., "Completed T02: User Authentication").
     * Report build status: `BUILD: PASS` | `BUILD: FAIL`
     * Report test status: `TESTS: PASS` | `TESTS: FAIL` | `TESTS: PARTIAL`
+    * Report resource status (if applicable): `RESOURCES: PASS` | `RESOURCES: FAIL` | `RESOURCES: N/A`
     * If you encountered any blockers that prevented full completion or stable state, do NOT mark it as done; instead, report the issue in detail.

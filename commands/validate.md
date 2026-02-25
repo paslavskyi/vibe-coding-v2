@@ -58,6 +58,10 @@ Perform comprehensive validation of all artifacts to ensure they are ready for e
 * **Question-Task Alignment:**
     * Questions don't duplicate information already in tasks
     * Unanswered questions don't block critical tasks
+* **Resource Completeness:**
+    * Tasks that add or modify UI/user-facing output include corresponding resource updates (localization/i18n strings, theme tokens, icons, accessibility labels, etc.)
+    * No completed UI task (`[x]`) leaves resource files out of sync with the implemented code
+    * `llm_context.md` documents impacted resource types when the project has UI-facing work
 
 # OUTPUT INSTRUCTIONS
 Generate a validation report with the following structure:

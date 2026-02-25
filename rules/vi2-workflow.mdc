@@ -8,7 +8,7 @@ globs:
 vi2-workflow:
 
 - The .vi2/ directory contains vi2 workflow artifacts: tasks.md (execution checklist), llm_context.md (knowledge snapshot), and questions.md (decision dialogue).
-- Every task must leave the project in a stable state: code builds and tests pass.
+- Every task must leave the project in a stable state: code builds, tests pass, and all related resources (localization, themes, assets, accessibility labels) are complete — no raw keys, missing translations, or blank placeholders visible to the end user.
 - Never modify completed tasks ([x]) in tasks.md. History is immutable.
 - When encountering ambiguity, raise a question in questions.md instead of guessing.
 - The user's code is the single source of truth. Artifacts adapt to code, not the other way around.
