@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "vi2-marketplace",
+  "description": "Marketplace for vi2 — a structured AI development workflow plugin",
+  "owner": {
+    "name": "Andrii Paslavskyi",
+    "email": "a.paslavsky@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "vi2",
+      "description": "A structured AI development workflow. Replaces ad-hoc prompting with persistent artifacts, explicit decision points, and stable-state task execution.",
+      "version": "1.0.2",
+      "source": "./",
+      "author": {
+        "name": "Andrii Paslavskyi",
+        "email": "a.paslavsky@gmail.com"
+      }
+    }
+  ]
+}

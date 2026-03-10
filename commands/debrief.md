@@ -1,5 +1,5 @@
 ---
-name: debrief
+name: vi2:debrief
 description: Process answers from questions.md and update the plan
 ---
 

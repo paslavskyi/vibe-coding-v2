@@ -1,5 +1,5 @@
 ---
-name: review
+name: vi2:review
 description: Perform a structured code review of completed tasks
 ---
 

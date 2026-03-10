@@ -1,5 +1,5 @@
 ---
-name: validate
+name: vi2:validate
 description: Check vi2 artifact integrity and consistency
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: refactor
+name: vi2:refactor
 description: Identify and execute refactoring opportunities
 ---
 

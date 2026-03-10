@@ -1,5 +1,5 @@
 ---
-name: status
+name: vi2:status
 description: Generate a progress report from vi2 artifacts
 ---
 

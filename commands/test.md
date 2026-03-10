@@ -1,5 +1,5 @@
 ---
-name: test
+name: vi2:test
 description: Run tests, identify coverage gaps, and write missing tests
 ---
 

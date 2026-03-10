@@ -1,5 +1,5 @@
 ---
-name: do-next
+name: vi2:do-next
 description: Implement the next incomplete task from tasks.md
 ---
 

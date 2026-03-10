@@ -1,5 +1,5 @@
 ---
-name: done
+name: vi2:done
 description: Verify completion, generate final report, and clean up .vi2/
 ---
 

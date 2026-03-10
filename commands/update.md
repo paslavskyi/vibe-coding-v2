@@ -1,5 +1,5 @@
 ---
-name: update
+name: vi2:update
 description: Integrate new requirements into the existing vi2 plan
 ---
 

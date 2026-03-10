@@ -1,5 +1,5 @@
 ---
-name: rollback
+name: vi2:rollback
 description: Revert completed tasks to a previous stable state
 ---
 

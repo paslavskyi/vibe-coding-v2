@@ -1,5 +1,5 @@
 ---
-name: sync
+name: vi2:sync
 description: Reconcile vi2 artifacts with manual code changes
 ---
 
